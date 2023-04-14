@@ -36,7 +36,7 @@ przycisk.addEventListener("click", function () {
     } else {
         var czas = new Date().getTime() - czas_reakcji;
         czasy_reakcji.push(czas);
-        czas_reakcji_element.innerHTML += "<br>Czas reakcji: " + czas + " ms";
+        czas_reakcji_element.innerHTML += "<br>Raaction time: " + czas + " ms";
 
         // Przesyłanie czasu reakcji do bazy danych SQLAlchemy
         fetch('/dodaj_czas_reakcji', {
