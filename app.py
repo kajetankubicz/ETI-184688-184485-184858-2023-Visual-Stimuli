@@ -15,7 +15,6 @@ db = SQLAlchemy(app)
 
 class Data(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    # First survey
     gender = db.Column(db.String(200))
     age = db.Column(db.String(200))
     lifestyle = db.Column(db.String(200))
@@ -24,7 +23,6 @@ class Data(db.Model):
     health = db.Column(db.String(600))
     color = db.Column(db.String(200))
     computer = db.Column(db.String(200))
-    # Second survey
     perceptual = db.Column(db.String(200))
     computer_experience = db.Column(db.String(200))
     electronic_devices = db.Column(db.String(200))
