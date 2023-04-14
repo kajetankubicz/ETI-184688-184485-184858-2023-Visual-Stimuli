@@ -7,8 +7,9 @@ from sqlalchemy import Integer
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = \
-    'sqlite:///' + os.path.join(basedir, 'database.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://blokandbankaandkubicz_visual_stimuli_user:1J02SdK80rDP0Q3K0gCpnjwXnqwfek8L@dpg-cgs90e8dh87qa7rv9qlg-a.frankfurt-postgres.render.com/blokandbankaandkubicz_visual_stimuli'
+
+#postgres://blokandbankaandkubicz_visual_stimuli_user:1J02SdK80rDP0Q3K0gCpnjwXnqwfek8L@dpg-cgs90e8dh87qa7rv9qlg-a.frankfurt-postgres.render.com/blokandbankaandkubicz_visual_stimuli
 db = SQLAlchemy(app)
 
 
